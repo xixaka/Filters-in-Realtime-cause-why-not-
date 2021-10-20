@@ -1,13 +1,12 @@
 
 noseX=0;
 noseY=0;
-x=50;
-y=0;
-
-filter = "";
+x=-25;
+y=-10;
+image1 = "";
 
 function preload(){
-    filter = loadImage("https://i.postimg.cc/3x3QzSGq/m.png");
+    image1 = loadImage("https://i.postimg.cc/3x3QzSGq/m.png");
 }
 
 function setup(){
@@ -37,7 +36,7 @@ function gotPose(results){
 
 function draw(){
     image(video, 0, 0, 300, 300);
-    image(image1, noseX + x, noseY + y, 100, 100);
+    image(image1, noseX + x, noseY + y, 50, 50);
 }
 
 function saveMe(){
@@ -46,12 +45,12 @@ function saveMe(){
 
 function mustache(){
     image1 = loadImage("https://i.postimg.cc/3x3QzSGq/m.png");
-    x = 50;
-    y = 0;
+    x = -50;
+    y = -10;
 }
 
 function lipstick(){
     image1 = loadImage("https://i.postimg.cc/PxFvYgkv/l1.png");
-    x = 100;
+    x = -25;
     y = -10;
 }
